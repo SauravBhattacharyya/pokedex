@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <main>
-      {loading ? (
+      {loading || !filteredPokemons.length ? (
         <Loader />
       ) : (
         <section className="my-5">

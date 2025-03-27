@@ -1,0 +1,25 @@
+.loaderWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .loader {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 8px solid red;
+    border-top-color: white;
+    border-left-color: white;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

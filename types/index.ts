@@ -1,3 +1,5 @@
+import { ChangeEvent } from "react";
+
 export interface PokemonState {
   limit: number;
   pokemons: Pokemon[];
@@ -73,3 +75,15 @@ export interface Move {
 export type PokemonTypes = {
   name: string;
 };
+
+export interface DropdownComponentProps {
+  selectedType: string;
+  pokemonTypes: PokemonTypes[];
+  handleTypeSearch: (selectedType: string) => void;
+}
+
+export interface SearchComponentProps {
+  searchVal: string;
+  handlePokemonSearch: () => void;
+  handleSearchTextChange: (arg1: ChangeEvent<HTMLInputElement>) => void;
+}

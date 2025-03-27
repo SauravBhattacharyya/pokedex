@@ -1,0 +1,10 @@
+.pokemonImage {
+  min-height: 200px;
+  img {
+    max-height: 200px;
+    max-width: 200px;
+  }
+  @media screen and (max-width: 640px) {
+    min-height: 120px;
+  }
+}
